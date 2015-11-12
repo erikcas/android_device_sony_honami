@@ -45,3 +45,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=480 \
     ro.usb.pid_suffix=19E
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := D6903,honami
+
+# TWRP Recovery
+DEVICE_RESOLUTION := 1080x1920
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
