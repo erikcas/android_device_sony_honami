@@ -21,6 +21,7 @@ TARGET_OTA_ASSERT_DEVICE := D6903,honami
 # TWRP Recovery
 DEVICE_RESOLUTION := 1080x1920
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
+TW_MAX_BRIGHTNESS := 255
 
 # Inherit AOSP Rhine common device parts
 $(call inherit-product, device/sony/honami/aosp_c6903.mk)
