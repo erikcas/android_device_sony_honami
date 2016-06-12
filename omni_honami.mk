@@ -19,6 +19,9 @@ TARGET_OTA_ASSERT_DEVICE := C6902,C6903,honami
 DEVICE_RESOLUTION := 1080x1920
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
+# Init variant check
+TARGET_LIBINIT_DEFINES_FILE := device/sony/common/init_sony.cpp
+
 # Inherit AOSP Rhine common device parts
 $(call inherit-product, device/sony/honami/aosp_c6903.mk)
 
