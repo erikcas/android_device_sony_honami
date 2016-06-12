@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D6903,honami
+TARGET_OTA_ASSERT_DEVICE := C6902,C6903,honami
 
 # TWRP Recovery
 DEVICE_RESOLUTION := 1080x1920
@@ -25,6 +25,9 @@ $(call inherit-product, device/sony/honami/aosp_c6903.mk)
 # Inherit Omni GSM telephony parts
 $(call inherit-product, device/sony/common/radio.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Init variant check
+TARGET_LIBINIT_DEFINES_FILE := device/sony/common/init_sony.cpp
 
 # Inherit Omni product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
